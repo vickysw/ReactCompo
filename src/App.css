@@ -1,38 +1,66 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**
+ * Header CSS
+ */
+ header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header ul.mui-list--inline {
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header table {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/**
+ * Content CSS
+ */
+#content-wrapper {
+  min-height: 100%;
+
+  /* sticky footer */
+  box-sizing: border-box;
+  margin-bottom: -100px;
+  padding-bottom: 100px;
+}
+
+
+/**
+ * Footer CSS
+ */
+footer {
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #eee;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 35px;
+}
+.data{
+margin-top: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+.data_val{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  margin: 15px;;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
